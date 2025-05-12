@@ -12,6 +12,7 @@ const View = async ({ id }: { id: string }) => {
 	after(
 		async () =>
 			await writeClient
+				.withConfig({ useCdn: false })
 				.patch(id)
 				.set({ views: totalViews + 1 })
 				.commit()

@@ -12,5 +12,5 @@ export const writeClient = createClient({
 });
 
 if (!writeClient.config().token) {
-	throw new Error('Write TOken Invlaid or not found');
+	throw new Error('Write token Invlaid or not found');
 }
