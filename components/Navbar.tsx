@@ -28,8 +28,10 @@ const Navbar = async () => {
 									await signOut();
 								}}
 							>
-								<span className="max-sm:hidden">LogOut</span>
-								<LogOut className="size-6 sm:hidden text-red-500" />
+								<button type="submit">
+									<span className="max-sm:hidden">LogOut</span>
+									<LogOut className="size-6 sm:hidden text-red-500" />
+								</button>
 							</form>
 
 							<Link href={`/user/${session?.user?.id}`}>
